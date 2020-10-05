@@ -56,11 +56,11 @@ var createCarousel = function (slidesCount) {
 
     var pointer = null;
 
-    carousel.addEventListener('click', function(e){
+    indicators.addEventListener('click', function(e){
         var target = e.target;
         
         if(target.classList.contains('indicators__item')) {
-            target.style.color = 'red'; 
+            target.style.backgroundColor = 'red'; 
 
             if (pointer !== null) {
                 pointer.removeAttribute('style');
